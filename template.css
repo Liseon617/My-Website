@@ -1,0 +1,21 @@
+.header {
+    background-color: cornflowerblue;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*descendant selector*/
+.nav a{
+    color: #fff;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
