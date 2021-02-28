@@ -11,28 +11,120 @@ body {
     display: flex;
     justify-content: space-between; 
     align-items: center;
+    z-index: 3;
 }
 
-/*descendant selector*/
-.nav a {
+.nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    overflow: hidden;
+    background-color: #283593;
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.nav li a {
     color: #fff;
     text-decoration: none;
     display: block;
     transition: all 0.3s ease-out;
 }
-.nav a:hover {
+
+.nav li a:hover{
     color: #c5cae9;
-    transform: rotate(6deg);
+    box-shadow: 0 -5px 0 #c5cae9 inset,
+    500px 0 0 rgba(255, 255, 255, 0.03) inset;
+    padding: 30% 0 ;
 }
-.nav {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+
+.menu-btn:hover {
+    color: #c5cae9;
 }
 
 .nav li {
     margin-left: 20px;
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: absolute;
+    right: 0;
+    user-select: none;
+}
+
+.menu-icon .navicon {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+}
+
+.menu-icon .navicon:before,
+.menu-icon .navicon:after {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.menu-icon .navicon:before {
+    top: 5px;
+}
+  
+.menu-icon .navicon:after {
+    top: -5px;
+}
+
+
+.menu-btn {
+    display: none;
+}
+  
+.menu-btn:checked ~ .nav {
+    max-height: 240px;
+}
+  
+.menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+  
+.menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+  
+.menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+  
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+  
+@media (min-width: 600px) {
+    .nav li {
+        float: left;
+    }
+
+    .nav {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .menu-icon {
+      display: none;
+    }
+
 }
 
 .hero {
