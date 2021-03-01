@@ -5,11 +5,11 @@ body {
 }
 
 .header {
+    padding: 0;
     background-color: #283593;
     position: fixed;
     width: 100%;
     align-items: center;
-    z-index: 3;
 }
 
 .logo {
