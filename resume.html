@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume/CV</title>
 </head>
-<body class="resume-body">
+<body>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="template.css" rel="stylesheet" type="text/css">
-    
+    <script src="https://kit.fontawesome.com/55711eed63.js" crossorigin="anonymous"></script>
+
     <div class="header">
-        <a href="" class="logo">MyLogo</a>
+        <a href="index.html" class="logo">MyLogo</a>
         <input class="menu-btn" type="checkbox" id="menu-btn">
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="nav">
@@ -25,7 +26,7 @@
     <div class="resume">
         <div class="resume_left">
             <div class="resume_profile">
-                <img src="#" alt="profile_pic">
+                <img src="profile_pic.jpeg" alt="profile_pic">
             </div> 
             <div class="resume_content">
                 <div class="resume_item resume_info">
@@ -35,29 +36,35 @@
                     </div>
                     <ul>
                         <li>
-                            <div class="icon"></div>
-                            <div class="data">
-                                //address
-                                30 Yunnan Walk 3, Singapore 638180
+                            <div class="icon">
+                                <i class="fas fa-mobile-alt" aria-hidden="true"></i>
                             </div>
-                        </li>
-                        <li>
-                            <div class="icon"></div>
                             <div class="data">
-                                //HP Number
                                 +65 9877 4455
                             </div>
                         </li>
                         <li>
-                            <div class="icon"></div>
+                            <div class="icon">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                            </div>
                             <div class="data">
-                                                        <li>
-                            <div class="icon"></div>
-                            <div class="data">
-                                //email address
                                 brian.lzl617@gmail.com
                             </div>
                         </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            </div>
+                            <div class="data">
+                                https://bit.ly/3rnFo6g
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fas fa-map-marked-alt" aria-hidden="true"></i>
+                            </div>
+                            <div class="data">
+                                30 Yunnan Walk 3 <br> Singapore 638180
                             </div>
                         </li>
                     </ul>
@@ -66,12 +73,235 @@
                     <div class="title">
                         <p class="bold">Skills</p>
                     </div>
+                    <ul>
+                        <li>
+                            <div class="skill_name">
+                                HTML
+                            </div>
+                            <div class="skill_progress">
+                                <span style= "width: 81%"></span>
+                            </div>
+                            <div class="skill-per">81%</div>
+                        </li>
+                        <li>
+                            <div class="skill_name">
+                                CSS
+                            </div>
+                            <div class="skill_progress">
+                                <span style= "width: 50%"></span>
+                            </div>
+                            <div class="skill-per">50%</div>
+                        </li>
+                        <li>
+                            <div class="skill_name">
+                                SQL
+                            </div>
+                            <div class="skill_progress">
+                                <span style= "width: 100%"></span>
+                            </div>
+                            <div class="skill-per">100%</div>
+                        </li>
+                        <li>
+                            <div class="skill_name">
+                                Node.js
+                            </div>
+                            <div class="skill_progress">
+                                <span style= "width: 87%"></span>
+                            </div>
+                            <div class="skill-per">87%</div>
+                        </li>
+                        <li>
+                            <div class="skill_name">
+                                Python
+                            </div>
+                            <div class="skill_progress">
+                                <span style= "width: 67%"></span>
+                            </div>
+                            <div class="skill-per">67%</div>
+                        </li>
+                        <li>
+                            <div class="skill_name">
+                                C#
+                            </div>
+                            <div class="skill_progress">
+                                <span style= "width: 92%"></span>
+                            </div>
+                            <div class="skill-per">92%</div>
+                        </li>
+                        <li>
+                            <div class="skill_name">
+                                UIPath
+                            </div>
+                            <div class="skill_progress">
+                                <span style= "width: 97%"></span>
+                            </div>
+                            <div class="skill-per">97%</div>
+                        </li>
+                        <li>
+                            <div class="skill_name">
+                                ASP.NET
+                            </div>
+                            <div class="skill_progress">
+                                <span style= "width: 92%"></span>
+                            </div>
+                            <div class="skill-per">92%</div>
+                        </li>
+                    </ul>
                 </div>
-                
             </div>
         </div>
-        <div class="resume_right"></div>
+        <div class="resume_right">
+            <div class="resume_item">
+                <div class="resume_item resume_about">
+                    <div class="title">
+                        <p class="bold">About Me</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem deserunt, repellat qui ipsum quisquam vero laboriosam dolorem ducimus nam ipsa veritatis, adipisci quasi neque quas. Eos, impedit. Vero, saepe neque.</p>
+                </div>
+                <div class="resume_item resume_work">
+                    <div class="title">
+                        <p class="bold">Work Experience</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="date">Sep 2019 - Jan 2020</div>
+                            <div class="info">
+                                <p class="semi_bold">CrimsonLogic Pte Ltd</p>
+                                <p class="semi_bold">Interned as a software test engineer</p>
+                                <p>
+                                    In charge of front-end testing of assigned company project application. Accessed database server for testing purposes. Got first-hand experience of the professional software development process, especially regarding the Agile Methodology and worked closely with project members of all levels to get work done efficiently.
+                                </p>                            
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date"> Mar 2019</div>
+                            <div class="info">
+                                <p class="semi_bold">Western Digital Corporation</p>
+                                <p class="semi_bold">Part-time product promoter/ sales associate</p>
+                                <p>
+                                    Promoted hard disk drives at CEE & PC SHOW 2019. Learned useful communication skills while working in teams and their importance.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">Apr 2018</div>
+                            <div class="info">
+                                <p class="semi_bold">Cenosis Holdings Pte Ltd</p>
+                                <p class="semi_bold">Part-time service promoter/ flyer distributer</p>
+                                <p>
+                                    Promoted the opening of the new branch in Jurong East through flyer distribution. Learned important people skills while interacting with customers.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">Aug 2017- Oct 2017</div>
+                            <div class="info">
+                                <p class="semi_bold">Kele Singapore</p>
+                                <p class="semi_bold">Part-time food promoter/ sales associate</p>
+                                <p>
+                                    In charge of selling the company’s food products. Promoted food products to the public during holiday events. Learned invaluable communication skills and improved my voice projection capabilities.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="resume_item resume_education">
+                    <div class="title">
+                        <p class="bold">Education</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="date">Aug 2022 - Present</div>
+                            <div class="info">
+                                <p class="semi_bold">Singapore Management University</p>
+                                <p>Bachelor's degree in Computer Science</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">Apr 2017 - May 2020</div>
+                            <div class="info">
+                                <p class="semi_bold">Ngee Ann Polytechnic</p>
+                                <p>Diploma in Financial Informatics; Cumulative GPA: 3.7551/4</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">Jan 2013 - Dec 2017</div>
+                            <div class="info">
+                                <p class="semi_bold">Jurong Seconday School</p>
+                                <p>Cambridge ‘O’ Level Certificate: 12 point</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="resume_item resume_awards">
+                    <div class="title">
+                        <p class="bold">Certificates and Awards</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="date">2018 - 2020 </div>
+                                <div class="info">
+                                    <p class="semi_bold">Edusave Certificate of Academic Achievement</p>
+                                    <p>Presented for achieving good academic performance and demonstrating good conduct</p>
+                                </div>
+                        </li>
+                        <li>
+                            <div class="date"> Aug 2019</div>
+                            <div class="info">                      
+                                <p class="semi_bold">IBF Qualified (Level 1)</p>
+                                <p>Certicate in Commercial Banking for Technology and Operations</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">Jul 2019</div>
+                            <div class="info">
+                                <p class="semi_bold">POLYFINTECH 100 Certificate of Participation</p>
+                                <p>Certicate awarded in recognition of the team's participation in the PolyFinTech100 API Hackathon under the Blockchain Category</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">Jul 2019</div>
+                            <div class="info">
+                                <p class="semi_bold">Student Excellence Award 2019</p>
+                                <p>Outstanding Community Service Team Award presented to the ICT society Community Service Team</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="date">Oct 2017 - Feb 2019</div>
+                            <div class="info">
+                                <p class="semi_bold">Director's List</p>
+                                <p>Placed in the Director’s List for excellent academic performance for the Diploma in Financial Informatics Level 1.1, April Semester, Academic Year 2017/2018</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="resume_item resume_hobby">
+                    <div class="title">
+                        <p class="bold">Hobby</p>
+                    </div>
+                    <ul>
+                        <li><i class="fas fa-book" aria-hidden="true"></i></li>
+                        <li><i class="fas fa-laptop-code" aria-hidden="true"></i></li>
+                        <li><i class="fas fa-running" aria-hidden="true"></i></li>
+                    </ul>
+                   </div>
+                <div class="resume_item resume_referees">
+                    <div class="title">
+                        <p class="bold">Referees</p>
+                    </div>
+                    <p>
+                        <b>Kua Kee Chuah</b> <br>
+                        Lecturer, School of InfoComm Technology, Ngee Ann Polytechnic <br>
+                        Blk 31, level 8, 535 Clementi Rd, Singapore 599489 <br>
+                        Contact Number: 9008 9082 <br>
+                        Email: <a href="mailto:Kkc3@np.edu.sg">Kkc3@np.edu.sg</a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-    
+    <div class="footer">
+        <p> &copy; 2021 fictional company</p>
+    </div>
 </body>
 </html>
