@@ -227,6 +227,7 @@ body {
 .resume .resume_left {
     width: 280px;
     background: #92B8CE;
+    position: relative;
 }
 
 .resume .resume_left .resume_profile{
@@ -331,6 +332,33 @@ body {
     background: #fff;
 }
 
+.resume .resume_left .resume_language li{
+    display: inline-block;
+    color: #274A5E;
+}
+
+.resume .resume_left .resume_language .language_chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.resume .resume_left .resume_language .language_chart .english {
+    background:conic-gradient(#ff9000 95%, #fff 1);
+  }
+  
+  .resume .resume_left .resume_language .language_chart .chinese {
+    background:conic-gradient(#ff9000 84%, #fff 1);
+}
+
+.resume .resume_left .resume_referees {
+    position: absolute;
+    bottom: 0px;
+}
+
 .resume .resume_right {
      width: 520px;
      background: #DAE9F2;
@@ -417,7 +445,7 @@ body {
     font-size: 30px;
 }
 
-.resume .resume-right .resume-hobby ul li:before {
+.resume .resume_right .resume-hobby ul li:before {
     content: "";
     position: absolute;
     top: 40px;
@@ -427,6 +455,6 @@ body {
     background: #456173;
 }
 
-.resume .resume-right .resume-hobby ul li:last-child:before {
+.resume .resume_right .resume-hobby ul li:last-child:before {
     display: none;
 }
