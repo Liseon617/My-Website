@@ -316,7 +316,7 @@ body {
     width: 25%;
     margin: 0 5px;
     height: 5px;
-    background: #274A5E;
+    background: #e8eaf6;
     position: relative;
 }
 
@@ -329,29 +329,81 @@ body {
     top: 0;
     left: 0;
     height: 100%;
-    background: #fff;
+    background: #274A5E;
 }
 
-.resume .resume_left .resume_language li{
-    display: inline-block;
+.language_container {
+    margin: 0;
+    width: 280px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.language_container .language_card {
+    position: relative;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.percent .number{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #274A5E;
 }
 
-.resume .resume_left .resume_language .language_chart {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+.percent .number p {
+    font-weight: 700;
+    font-size: 20px;
 }
 
-.resume .resume_left .resume_language .language_chart .english {
-    background:conic-gradient(#ff9000 95%, #fff 1);
-  }
-  
-  .resume .resume_left .resume_language .language_chart .chinese {
-    background:conic-gradient(#ff9000 84%, #fff 1);
+.percent .number p span {
+    font-size: 10px;
+}
+.percent .language {
+    position: absolute;
+    width: 70px;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #274A5E;
+}
+svg {
+    position: relative;
+    width: 115px;
+    height: 70px;
+    z-index: 1000;
+}
+svg circle {
+    fill: none;
+    stroke: #e8eaf6;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+
+svg circle:nth-child(2) {
+    stroke-dasharray: 189;
+    stroke-dashoffset: 189;
+}
+
+.english svg circle:nth-child(2) {
+    stroke-dashoffset: calc(189 - (189 * 100) / 100);
+    stroke: #274A5E;
+}
+
+.chinese svg circle:nth-child(2) {
+    stroke-dashoffset: calc(189 - (189 * 70) / 100);
+    stroke: #274A5E;
 }
 
 .resume .resume_left .resume_referees {
@@ -403,7 +455,7 @@ body {
 
 .resume .resume_right .resume_work ul li:before,
 .resume .resume_right .resume_education ul li:before,
-.resume .resume_right .resume_awards ul li:before{
+.resume .resume_right .resume_awards ul li:before {
     content: "";
     position: absolute;
     top: 5px;
@@ -427,7 +479,7 @@ body {
     background: #456173;
 }
 
-.resume .resume_right .resume_hobby ul {
+/*.resume .resume_right .resume_hobby ul {
     display: flex;
     justify-content: space-between;
 }
@@ -457,4 +509,5 @@ body {
 
 .resume .resume_right .resume-hobby ul li:last-child:before {
     display: none;
-}
+}*/
+
