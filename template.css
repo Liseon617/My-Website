@@ -157,7 +157,7 @@ body {
 
 .button {
     background-color: #313E45;
-    color: #fff;
+    color: #DAE9F2;
     text-decoration: none;
     padding: 12px 20px;
     border-radius: 8px;
@@ -167,7 +167,16 @@ body {
 
 .features {
     background-color: #DAE9F2;
-    padding: 60px 45px;
+    padding: 30px 45px;
+}
+
+.features h2 {
+    font-size: 2.1rem;
+    font-weight: normal;
+    margin: 0 10%;
+    color: #364C59;
+    max-width: 1200px;
+    padding: 2% 2%
 }
 
 .features-inner {
