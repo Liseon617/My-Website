@@ -27,7 +27,7 @@ io.on("connection", function (socket) {
   console.log("a user connected");
 
   socket.on("chat message", (message) => {
-    console.log(message);
+    //console.log(message);
 
     const callapibot = async (projectId = process.env.PROJECT_ID) => {
       try {
@@ -50,7 +50,7 @@ io.on("connection", function (socket) {
         };
         const responses = await sessionClient.detectIntent(request);
 
-        console.log("Detected intent");
+        /*console.log("Detected intent");
         const result = responses[0].queryResult.fulfillmentText;
         socket.emit("bot reply", result);
         console.log(result);
@@ -58,7 +58,7 @@ io.on("connection", function (socket) {
           console.log(`  Intent: ${result.intent.displayName}`);
         } else {
           console.log(`  No intent matched.`);
-        }
+        }*/
       } catch (error) {
         console.log(error);
       }
