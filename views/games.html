@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/55711eed63.js" crossorigin="anonymous"></script>
+    <link href="css/template.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body onload="gamesList()">
+    <div class="header">
+        <a href="index.html" class="logo">MyLogo</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn">
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="https://github.com/Liseon617">Github</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div id="games"></div>
+    <section>
+        <button class="btn chat-btn">
+          <i class="fas fa-headset"></i>
+        </button>
+  
+        <div class="chat-popup">
+          <div style="width: 100%; text-align: center;"><a href="https://fontmeme.com/futuristic-fonts/"><img src="https://fontmeme.com/permalink/210323/3c9939fae12e2bee0bf92e12d55ff4d1.png" alt="futuristic-fonts" border="0"></a> </div>
+          <div class="chat-area">
+            <div class="incoming-msg">
+              <img src="img/bot.png" class="avatar" alt="">
+              <span class="bot-msg">Hi, How can I help you?</span>
+            </div>
+          </div>
+          <div class="input-area">
+            <input type="text">
+            <button class="btn submit send"><i class="far fa-paper-plane"></i></button>
+            <button class="btn submit mic"><i class="fas fa-microphone-alt" id="mic"></i></button>
+          </div>
+        </div>
+    </section>
+    <div class="footer">
+        <p> &copy; 2021 fictional company</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+    <script src = "js/main.js"></script>
+</body>
+</html>
