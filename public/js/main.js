@@ -3,7 +3,7 @@ function funfact() {
     fetch ('https://uselessfacts.jsph.pl/random.json?language=en')
     .then((res) => res.json())
     .then((data) => {
-        document.getElementById("fun_fact").innerHTML = "Did You Know: " + data.text.toString();
+        document.getElementById("fun_fact").innerHTML = "Did You Know: " + '"' + data.text.toString() + '"';
     });
 }
 
