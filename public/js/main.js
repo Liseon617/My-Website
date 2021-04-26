@@ -101,17 +101,19 @@ socket.on("bot reply", (text) => {
 });
 
 submitBtn.addEventListener('click', () => {
-  let userInput = inputElm.value;
-  let temp = `<div class="outgoing-msg">
-  <span class="my-msg">${userInput}</span>
-  <img src="img/me.png" class="avatar">
-  </div>`;
-
-  chatArea.insertAdjacentHTML("beforeend", temp);
-  chatArea.scrollTop = chatArea.scrollHeight;
-  inputElm.value = "";
-  socket.emit("chat message", userInput);
-  recognised = true; 
+  if(inputElm.value != "") {
+    let userInput = inputElm.value;
+    let temp = `<div class="outgoing-msg">
+    <span class="my-msg">${userInput}</span>
+    <img src="img/me.png" class="avatar">
+    </div>`;
+  
+    chatArea.insertAdjacentHTML("beforeend", temp);
+    chatArea.scrollTop = chatArea.scrollHeight;
+    inputElm.value = "";
+    socket.emit("chat message", userInput);
+    recognised = true; 
+  }
 })
 
 inputElm.addEventListener("keyup", (event) => {

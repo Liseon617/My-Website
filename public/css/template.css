@@ -635,6 +635,7 @@ svg circle:nth-child(2) {
 .container .card:nth-child(5n) h2 {
     background-image: radial-gradient( circle 266px at 12% 29.3%,  rgba(58,219,154,0.93) 2%, rgba(153,228,208,1) 38.6%, rgba(142,246,219,0.82) 73.9%, rgba(253,255,238,1) 100.7% );
 }
+
 section {
     font-family: "HelveticaNeueLight", "HelveticaNeue-Light",
     "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue",
